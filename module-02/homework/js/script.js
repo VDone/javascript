@@ -40,7 +40,7 @@ else if (groupNum <= 6) {
             resortHurgada = resortHurgada - groupNum;
             console.log(resortHurgada);
             } else {
-                alert('Или вы ошиблись, тогда начните поиск сначала или вы очень привередливы.');
+                alert('Или вы ошиблись, тогда нажмите F5 и начните поиск сначала или вы очень привередливы.');
             }
         }
     }
@@ -58,7 +58,7 @@ else if (groupNum > 6 && groupNum <= 15) {
             resortHurgada = resortHurgada - groupNum;
             console.log(resortHurgada);
         }else {
-            alert('Или вы ошиблись, тогда начните поиск сначала или вы очень привередливы.');
+            alert('Или вы ошиблись, тогда нажмите F5 и начните поиск сначала или вы очень привередливы.');
         }
     }
 }
@@ -69,7 +69,7 @@ else if (groupNum > 15 && groupNum <= 25) {
         resortHurgada = resortHurgada - groupNum;
         console.log(resortHurgada);
     }else {
-        alert('Или вы ошиблись, тогда начните поиск сначала или вы очень привередливы.');
+        alert('Или вы ошиблись, тогда нажмите F5 и начните поиск сначала или вы очень привередливы.');
     }
 }
 else if (groupNum > 25) {
