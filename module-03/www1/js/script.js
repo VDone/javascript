@@ -58,7 +58,9 @@
 //         break;
 // }
 // console.log(Math.floor(Math.random()*10));
-let year = +prompt('Enter year');
-let century = Math.ceil((year+1)/100);
-alert(century);
+// let year = +prompt('Enter year');
+// let century = Math.ceil((year+1)/100);
+// alert(century);
 
+let arr = [];
+let a = new Array();
