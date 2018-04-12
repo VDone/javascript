@@ -26,19 +26,19 @@ else if (groupNum <= 6) {
     if (resort === true) {
         alert('Спасибо место зарезервировано.');
         resortTaba = resortTaba - groupNum;
-        console.log(resortTaba);
+        console.log(`В отеле Taba осталось ${resortTaba} мест.`);
     } else if (resort === false) {
         resort = confirm('Для вашей группы есть место в отеле Sharm, зарезервировать Вам место?');
         if (resort === true) {
-        alert('Спасибо место зарезервировано.');
-        resortSharm = resortSharm - groupNum;
-        console.log(resortSharm);
+            alert('Спасибо место зарезервировано.');
+            resortSharm = resortSharm - groupNum;
+            console.log(`В отеле Sharm осталось ${resortSharm} мест.`);
         } else if (resort === false) {
             resort = confirm('Для вашей группы есть место в отеле Hurgada, зарезервировать Вам место?');
             if (resort === true) {
-            alert('Спасибо место зарезервировано.');
-            resortHurgada = resortHurgada - groupNum;
-            console.log(resortHurgada);
+                alert('Спасибо место зарезервировано.');
+                resortHurgada = resortHurgada - groupNum;
+                console.log(`В отеле Hurgada осталось ${resortHurgada} мест.`);
             } else {
                 alert('Или вы ошиблись, тогда нажмите F5 и начните поиск сначала или вы очень привередливы.');
             }
@@ -50,13 +50,13 @@ else if (groupNum > 6 && groupNum <= 15) {
     if (resort === true) {
         alert('Спасибо место зарезервировано.');
         resortSharm = resortSharm - groupNum;
-        console.log(resortSharm);
+        console.log(`В отеле Sharm осталось ${resortSharm} мест.`);
     } else if (resort === false) {
         resort = confirm('Для вашей группы есть место в отеле Hurgada, зарезервировать Вам место?');
         if (resort === true) {
             alert('Спасибо место зарезервировано.');
             resortHurgada = resortHurgada - groupNum;
-            console.log(resortHurgada);
+            console.log(`В отеле Hurgada осталось ${resortHurgada} мест.`);
         }else {
             alert('Или вы ошиблись, тогда нажмите F5 и начните поиск сначала или вы очень привередливы.');
         }
@@ -67,7 +67,7 @@ else if (groupNum > 15 && groupNum <= 25) {
     if (resort === true) {
         alert('Спасибо место зарезервировано.');
         resortHurgada = resortHurgada - groupNum;
-        console.log(resortHurgada);
+        console.log(`В отеле Hurgada осталось ${resortHurgada} мест.`);
     }else {
         alert('Или вы ошиблись, тогда нажмите F5 и начните поиск сначала или вы очень привередливы.');
     }
