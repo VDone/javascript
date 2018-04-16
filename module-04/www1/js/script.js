@@ -236,3 +236,252 @@
 */
 
 // let arr = [];
+
+// function vdcalc() {
+//   console.log('text');
+// }
+// vdcalc();
+// function vdadd(){
+//   console.log(5+6);
+// }
+// vdadd();
+// function vdcalc(params) {
+  
+// }
+// function showText() {
+//   let a=5;
+//   let b=6;
+//   return a+b;
+// }
+// console.log(showText());
+
+// function calc(number1, number2) {
+//   return number1 + number2;
+// }
+// console.log(calc(5,10));
+// console.log(calc(20,30));
+
+// function minus(a, b) {
+//   return a - b;
+// }
+// console.log(minus(5,10));
+// function showText(name = 'Jim', days = 30) {
+//   return `${name} has trial version ${days} days`;
+// }
+// console.log(showText('John', 20));
+
+// function stringPoli(string) {
+//   let stringRevers = string.split('');
+//   stringRevers = stringRevers.reverse();
+//   stringRevers = stringRevers.join('');
+// return string === stringRevers) {
+//   console.log('true');
+//   } else {
+//   console.log('false');
+//   }
+// }
+// stringPoli('lol');
+
+// function stringPoli(string) {
+//   string = string.toLowerCase();
+//   console.log(string);
+//   string = string.split(',');
+//   string = string.join('');
+//   console.log(string);
+//   string = string.split('.');
+//   string = string.join('');
+//   console.log(string);
+//   string = string.split(' ');
+//   string = string.join('');
+//   console.log(string);
+  // string = string.split('/');
+  // string = string.join('');
+  // console.log(string);
+  // string = string.split('\\');
+  // string = string.join('');
+  // console.log(string);
+  // string = string.split('(');
+  // string = string.join('');
+  // console.log(string);
+  // string = string.split(')');
+  // string = string.join('');
+  // console.log(string);
+  // string = string.split(')');
+  // string = string.join('');
+  // console.log(string);
+//   let stringRevers = string.split('');
+//   stringRevers = stringRevers.reverse();
+//   console.log(stringRevers);
+//   stringRevers = stringRevers.join('');
+//   console.log(stringRevers);
+// return string === stringRevers;
+// }
+// console.log(stringPoli('A man, a plan, a canal. Panama'));
+
+// function checkPalindrome(string) {
+//   let modString = string.toLowerCase().split(' ').join('').split(',').join('').split('.').join('');
+//   let palindrom = modString.split('').reverse().join('');
+//   if (modString === palindrom) {
+//       return true
+//   } else {
+//       return false
+//   }
+//   // return modString === palindrom ? true : false;
+  // return modString === palindrom;
+// }
+
+/*
+  Написать функцию, getPx(str)
+
+  Функция getPx должна получать строку вида '10px',
+  проверять была ли передана строка, если да,
+  возвращать только числовую составляющую, к примеру 10.
+
+  Если была передана не строка, функция возвращает null.
+*/
+// function getPx(str) {
+//   if (typeof str !== 'string') {
+//     return null;
+//   } 
+//     return str = parseFloat(str);
+// }
+// console.log( getPx("10px") === 10 ); // должно быть:  true
+// console.log( getPx("10.5") === 10.5 ); // должно быть:  true
+// console.log( getPx("0") === 0 ); // должно быть:  true
+// console.log( getPx(-1) ); // должно быть:  null
+// console.log( getPx(10) ); // должно быть:  null
+
+/*  
+  Создайте фукнцию findLongestWord(str),
+  которая получает аргументом произвольную строку и
+  возвращает самое длинное слово в этой строке.   
+  Важное условие - в строке могут быть только пробелы
+  и символы букв и цифр!
+*/
+
+// function findLongestWord(string) {
+// let longestWord;
+// let wordLength = 0;
+// let newString = string.split(' ');
+// console.log(newString);
+// for (let i = 0; i < newString.length; i++) {
+//         if (newString[i].length > wordLength){
+//             wordLength = newString[i].length;
+//             longestWord = newString[i];
+            
+//         }
+//     } 
+//     return longestWord;
+// }
+
+// // Вызовы функции для проверки
+// console.log(
+//   findLongestWord("The quick brown fox jumped over the lazy dog")
+// ); // вернет 'jumped'
+
+// console.log(
+//   findLongestWord("Google do a roll")
+// ); // вернет 'Google'
+
+// console.log(
+//   findLongestWord("May the force be with you")
+// ); // вернет 'force'
+
+/*
+  Создайте функцию titleCase(str), которая 
+  получает строку и возвращает предоставленную строку 
+  с первой буквой каждого слова, заглавными. 
+  Остальные буквы слова должны быть не заглавными.
+*/
+
+// function titleCase(str) {
+//   if (typeof str !== 'string'){
+//     return;
+//   } let lowCa = str.toLowerCase();
+//   lowCa = lowCa.split(' ');
+//   let newArr = [];
+//   for (let word of lowCa) {
+//     let wordUpp = word.replace(word[0], word[0].toUpperCase());
+//     newArr.push(wordUpp);
+//   }
+//   newArr = newArr.join(' ');
+//   return newArr;
+// }
+
+// // Вызовы функции для проверки
+// console.log( 
+//   titleCase("I'm a little tea pot")
+// ); // вернет "I'm A Little Tea Pot"
+
+// console.log(
+//   titleCase("sHoRt AnD sToUt")
+// ); // вернет "Short And Stout".
+
+// console.log(
+//   titleCase("HERE IS MY HANDLE HERE IS MY SPOUT")
+// ); // вернет "Here Is My Handle Here Is My Spout".
+
+/*  
+  Есть массив уникальных чисел uniqNumbers.
+  
+  Написать функцию, addUniqNumbers(...), 
+  которая получает произвольное кол-во чисел как аргументы, 
+  и добавляет в массив uniqNumbers только уникальные,
+  а повторяющиеся игнорирует.
+*/
+
+// const uniqNumbers  = [2, 1, 4, 9];
+// function addUniqNumbers() {
+//   // console.log(arguments);
+//   let arr = Array.from(arguments);
+//   console.log(arr);
+//   for (let number of arr) {
+//     if (!uniqNumbers.includes(number)){
+//       uniqNumbers.push(number);
+//     }
+//   }
+// }
+
+// // Вызовы функции для проверки
+// addUniqNumbers(1, 2, 3);
+// console.log(uniqNumbers); // будет [2, 1, 4, 9, 3]
+
+// addUniqNumbers(12, 2, 3, 19);
+// console.log(uniqNumbers); // будет [2, 1, 4, 9, 3, 12, 19]
+
+// addUniqNumbers(4, 5, 12, 3, 1, 2, 8);
+// console.log(uniqNumbers); // будет [2, 1, 4, 9, 3, 12, 19, 5, 8]
+
+/*
+  Создайте функцию removeFromArray(arr), 
+  которая получает 1 параметр, исходный массив arr.
+  
+  При вызове функции, первым аргументов всегда будет массив чисел,
+  за которым следуют один или несколько аргументов, тоже чисел. 
+  
+  Удалите все элементы из исходного массива, 
+  которые имеют такое же значение, что и аргументы.
+*/
+
+// function removeFromArray(arr) {
+//   // console.log(arr);
+//   // console.log(arguments);
+//   let newArr = Array.from(arguments);
+//   newArr.shift();
+//   console.log(newArr);
+//   for (let number of newArr) {
+//     if (arr.includes(number)){
+//       // arr.split('number');
+//       // arr.join('');
+//       let index = arr.indexOf(number);
+//       arr.splice(index, 1);
+//     }
+//   }
+//   return arr;
+// }
+
+// // Вызовы функции для проверки
+// console.log(removeFromArray([1, 2, 3, 4, 5], 2, 4)); // вернет [1, 3, 5]
+
+// console.log(
+//   removeFromArray([12, 4, 3, 8, 17], 3, 29, 18, 4)); // вернет [12, 8, 17]
