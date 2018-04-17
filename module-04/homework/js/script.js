@@ -17,15 +17,13 @@
     function checkLoginValidity() {
       if (login.length >= 4 && login.length <= 16) {
         function checkIfLoginExists() {
-          for (let i = 0; i < logins.length; i++) {
-            if (!logins.includes(login)){
-              logins.push(login);
-              alert('Ваш логин уникален. Спасибо за регистрацию!');
-              return;
+          if (!logins.includes(login)){
+            logins.push(login);
+            alert('Ваш логин уникален. Спасибо за регистрацию!');
+            return;
             } else {
-              alert('Такой логин уже используется! Нажмите F5 и повторите попытку.');
-              return;
-            }
+            alert('Такой логин уже используется! Нажмите F5 и повторите попытку.');
+            return;
           }
         }
       } else {
